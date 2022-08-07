@@ -13,7 +13,6 @@ const Sidebar = () => {
       <div className={styles.top}>
         <span className={styles.logo}>Sonerady</span>
       </div>
-      <hr />
       <div className={styles.center}>
         <>
           <p className={styles.title}>Main</p>

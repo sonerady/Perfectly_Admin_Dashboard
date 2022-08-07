@@ -7,6 +7,7 @@ import {
   Routes,
 } from "react-router-dom";
 import RouteData from "./config/Route";
+import Navbar from "./components/navbar/Navbar";
 
 const App = () => {
   return (

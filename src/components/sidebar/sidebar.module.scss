@@ -8,16 +8,11 @@
   .top {
     height: $sidebar-top-height;
     @include flex(center, center);
-
+    border-bottom: $general-border;
     .logo {
-      font-size: $sidebar-font-size;
       color: $main-color;
       font-weight: 600;
     }
-  }
-  hr {
-    height: 0;
-    border: $sidebar-border;
   }
 
   .center {
