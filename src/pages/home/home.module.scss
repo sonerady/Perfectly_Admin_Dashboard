@@ -1,0 +1,9 @@
+@use "../../uikit/styles/index" as *;
+
+.home {
+  @include flex(unset, unset);
+
+  .homeContainer {
+    flex: 6;
+  }
+}

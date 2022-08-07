@@ -1,0 +1,76 @@
+@use "../../uikit/styles/index" as *;
+
+.sidebar {
+  min-height: 100vh;
+  flex: 1;
+  border-right: $sidebar-border;
+
+  .top {
+    height: $sidebar-top-height;
+    @include flex(center, center);
+
+    .logo {
+      font-size: $sidebar-font-size;
+      color: $main-color;
+      font-weight: 600;
+    }
+  }
+  hr {
+    height: 0;
+    border: $sidebar-border;
+  }
+
+  .center {
+    padding-left: 10px;
+  }
+  .title {
+    font-weight: 500;
+    color: $sidebar-title-color;
+    font-size: $sidebar-title-size;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+
+  .center {
+    li {
+      @include flex(center, unset);
+      cursor: pointer;
+      gap: 0.3rem;
+      padding: 5px;
+
+      &:hover {
+        background-color: $sidebar-hover-color;
+      }
+
+      .icon {
+        font-size: $icon-size;
+        color: $main-color;
+      }
+
+      span {
+        font-size: $sidebar-span-size;
+        color: $sidebar-span-color;
+      }
+    }
+  }
+  .bottom {
+    @include flex(center, unset);
+    .colorOption {
+      width: 20px;
+      height: 20px;
+      border-radius: 5px;
+      border: 1px solid $main-color;
+      cursor: pointer;
+      margin-left: 15px;
+      margin-top: 1rem;
+
+      &:nth-child(1) {
+        background-color: $light;
+      }
+
+      &:nth-child(2) {
+        background-color: #333;
+      }
+    }
+  }
+}
