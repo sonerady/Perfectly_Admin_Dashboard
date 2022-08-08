@@ -1,0 +1,71 @@
+@use "../../uikit/styles/index" as *;
+
+.widget {
+  @include flex(unset, space-between);
+  flex: 1;
+
+  padding: 10px;
+  -webkit-box-shadow: $widget-shadow;
+  box-shadow: $widget-shadow;
+  border-radius: $border-radius;
+  height: $widget-height;
+  border: 1px solid rgba(128, 128, 128, 0.123);
+
+  .left,
+  .right {
+    @include flex(unset, space-between);
+    flex-direction: column;
+
+    .title {
+      font-weight: 500;
+      font-size: 14px;
+      color: $general-title-color;
+    }
+
+    .counter {
+      font-size: 28px;
+      font-weight: 300;
+    }
+
+    .link {
+      width: max-content;
+      font-size: 12px;
+      border-bottom: 1px solid gray;
+    }
+    .user {
+      color: $user-color;
+      background-color: $user-background;
+    }
+    .earnings {
+      background-color: $earnings-background;
+      color: $earnings-color;
+    }
+    .balance {
+      background-color: $balance-background;
+      color: $balance-color;
+    }
+    .order {
+      background-color: $order-background;
+      color: $order-color;
+    }
+    .percentage {
+      @include flex(center, unset);
+      font-size: 14px;
+
+      &.positive {
+        color: $positive-color;
+      }
+      &.negative {
+        color: $negative-color;
+      }
+    }
+
+    .icon {
+      font-size: 30px !important;
+      padding: 5px;
+      //   background-color: $sidebar-hover-color;
+      border-radius: 5px;
+      align-self: flex-end;
+    }
+  }
+}

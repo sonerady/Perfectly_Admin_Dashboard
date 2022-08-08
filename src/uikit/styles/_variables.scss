@@ -11,6 +11,29 @@ $navbar-height: 50px;
 $navbar-color: #555;
 $navbar-padding: 20px;
 
+$user-color: crimson;
+$user-background: rgba(255, 0, 0, 0.2);
+
+$earnings-color: green;
+$earnings-background: rgba(0, 128, 0, 0.2);
+
+$balance-color: purple;
+$balance-background: rgba(128, 0, 128, 0.2);
+
+$order-color: purple;
+$order-background: rgba(128, 0, 128, 0.2);
+
+$general-padding: 20px;
+
+$widget-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+$widget-height: 160px;
+
+$positive-color: #00c853;
+$negative-color: #ff5252;
+
+$general-title-color: rgb(160, 160, 160);
+$general-border: 0.5px solid rgb(230, 227, 227);
+
 $sidebar-top-height: 50px;
 $sidebar-font-size: 20px;
 $sidebar-title-size: 14px;
@@ -18,12 +41,11 @@ $navbar-item-size: 14px;
 $sidebar-title-color: #999;
 $sidebar-hover-color: #7466f13b;
 $sidebar-border: 0.5px solid rgb(230, 227, 227);
-$general-border: 0.5px solid rgb(230, 227, 227);
-$sidebar-span-size: 13px;
+$sidebar-span-size: 15px;
 $sidebar-span-color: #888;
 $icon-size: 18px;
 
-$border-radius: 30px;
+$border-radius: 10px;
 
 $mobile-width: 600px;
 $tablet-width: 1024px;

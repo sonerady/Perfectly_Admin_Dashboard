@@ -4,6 +4,12 @@
   @include flex(unset, unset);
 
   .homeContainer {
-    flex: 6;
+    flex: 7;
+
+    .widgets {
+      @include flex(unset, unset);
+      padding: $general-padding;
+      gap: 20px;
+    }
   }
 }
